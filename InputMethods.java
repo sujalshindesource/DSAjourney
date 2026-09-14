@@ -31,6 +31,7 @@ public class InputMethods {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         System.out.println(n);
+        sc.close();
     }
 
     
