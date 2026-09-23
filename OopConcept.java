@@ -1,6 +1,30 @@
-// Method overloading + Array of objects + for each + Encaspulation + this + static + static block + Class.forName()
+// Method overloading + Array of objects + for each + Encaspulation + this + static + static block + Class.forName() + inheritance 
 // Every method has a stack ok .. 
+class inhertitance{
+    // we Extends class 
+        // java does not support multiple inheritance 
+        // thats all bhaiii 
 
+        // flow of Executing Constructors 
+        // when u create obj of child class then the obj creation start from top parent class
+        // every constructor has method called 
+        // super() 
+        // which calls parent constructor 
+        // we can also pass data to ofc 
+
+        // no demonstration no timepass 
+}
+
+class MethodOVeriding{
+    public int show(int a){
+        System.out.println(a);
+        return 0;
+    }
+    public float show(int a , int b){
+        System.out.println(a+b);
+        return 0;
+    }
+}
 
 class Cal{
     public int a =0;
