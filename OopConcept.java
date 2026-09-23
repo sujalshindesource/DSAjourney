@@ -1,7 +1,8 @@
-// Method overloading + Array of objects + for each + Encaspulation + this + static + static block
+// Method overloading + Array of objects + for each + Encaspulation + this + static + static block + Class.forName()
 // Every method has a stack ok .. 
 
- class Cal{
+
+class Cal{
     public int a =0;
 
     static {
@@ -63,6 +64,15 @@ public class OopConcept {
         // here we simply declare teh var private so that only mathods can acces them adn no one else
         // greate example of Encspulation is A ATM machine we want money but dont knwo how it works behinde
 
+        
+        // but what if we want to load class but do no want to create the obj 
+        // tehn we can use the forName() methhod 
+        try{
+            Class.forName("Cal");
+        }
+        catch(Exception e ){
+
+        }
         
 
     }
