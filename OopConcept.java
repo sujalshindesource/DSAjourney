@@ -15,7 +15,7 @@ class inhertitance{
         // no demonstration no timepass 
 }
 
-class MethodOVeriding{
+class MethodOverLoading{
     public int show(int a){
         System.out.println(a);
         return 0;
@@ -25,6 +25,27 @@ class MethodOVeriding{
         return 0;
     }
 }
+
+// # Method OVerriding from here 
+class A{
+    //  this is the method originaly definded 
+    public void show(){
+        System.out.println("hey form A");
+    }
+
+}
+class B extends A
+{
+    //  and this is the class who extends A as well as override the definaation of the show mehtod 
+    @Override 
+    public void show(){
+        System.out.println("hey form B");
+    }
+}
+
+
+
+
 
 class Cal{
     public int a =0;
@@ -97,6 +118,10 @@ public class OopConcept {
         catch(Exception e ){
 
         }
+
+        // Method overiding 
+        B b = new B();
+        b.show();
         
 
     }
