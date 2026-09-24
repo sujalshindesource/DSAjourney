@@ -126,3 +126,10 @@ public class OopConcept {
 
     }
 }
+ /// # Object Hearchy 
+ /// Object ---> Throwable ---> 2 child 
+ /// 1 Error ----> (Thread Death ,  IOError , VirtualError ---> (Out of memory)))
+ //  2 Exception ----> (RuntimeException ----> (Arithmaticexcp , ArrayIndex...etc) , SQL , Io )
+
+ /// 
+ /// 

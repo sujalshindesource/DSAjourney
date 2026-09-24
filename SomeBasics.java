@@ -1,6 +1,6 @@
-// Name convention + final + object class + Abstract + Wrapper Class
+// Name convention + final + object class + Abstract + Wrapper Class + Interface + enum + Annotation + Lambda expression + exception
 
-import javax.swing.event.InternalFrameAdapter;
+import java.io.ObjectInputFilter.Status;
 
 class A{
     public int  a =0 ;
@@ -28,6 +28,53 @@ class B extends Car{
 
 }
 
+// # Interface
+// ever wonder why we declarre class abstract it has everything undefine so insted there is special thingg to handle java
+/// known as Interface 
+/// interface only have abstract method
+/// all are by default is public abstract
+/// we cannot create obj of interface ofcourse
+/// we dont extend the interface we inpmlement
+/// all the variable in interface are final and static bro
+
+interface I{
+    void show();
+}
+class Inter implements I{
+    public void show(){};
+}
+
+/// and here interface can implemetn number of interface showcasing the multiple inheritance which is not happen in class in jaava
+/// even interface can extend other interface too
+/// class extends class 
+/// class implements interface
+/// interfaec extends interface
+/// 
+/// # types of interface 
+/// 1 normal interface : which has more than 2 methos 
+/// 2 fn interface :  only has one method 
+/// 4 marker : blank interface 
+
+
+// # enum 
+// enum is like a fiel can hold number of things based on the situation so enum helps here hold them as a array 
+enum status {
+Alive , Dead , HalfDead , Atma ;
+    // now status can be anything out of this 
+    // but one at a time 
+    // enum objects are constant ok
+    // enum is a class but cannot be extend by anyone 
+    // rest of this in main
+}
+
+// # Annotation
+// when we want to provide or tell the compiler somthing we use this annotation 
+class Here{
+    /// @Override :  tells that the method must be override now 
+    /// @deprecated : tells i can use this method but prefer other alternatives
+    /// and there are lot of it figure it oout if u want 
+    
+}
 
 public class SomeBasics {
     public static void main(String[] args) {
@@ -73,6 +120,39 @@ public class SomeBasics {
         int sint = Integer.parseInt(s); // now this well conver s into integer that will be stored in sint 
         // thats all u can discover more classes like that if u want 
 
+        // # enum
+        int i = 5;
+        status st = status.Alive; //now st is alive 
+        // i told its like array tight then how to get the array index of current there methods too 
+        System.out.println("herre is the index of current status : " + st.ordinal());
+
+
+        // Lambda expression 
+        /// A obj = new A(){
+        /// }  this is too obvious  
+        /// so java says wait here is the shortcut 
+        /// 
+        /// but the thing is it only works with the fn interface not normally 
+        // A obj1 = () -> {
+        // };
+
+        ///
+        ///  # Exception
+        /// types : 
+        /// 1 compile time  2 . run time  3.Logical error
+        /// so to handle it u can use try catch also us can define ladder of catch 
         
+        try{
+            // rsiky commands
+            // # Throw : throws exception to whos calling  them 
+        // when we want to throw exception explicitelty then use throw 
+        
+            throw new ArithmeticException();
+        }catch(Exception e ){}
+        
+        // we can even create our own exception here
+        class e extends Exception{
+        }
+
     }
 }
