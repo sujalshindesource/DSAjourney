@@ -77,6 +77,6 @@ public class JavaCollection {
         //isEmpty : cheak if array is empty 
         // indexOf() :  searches aspecified element in an arraylist the element
 
-        
+        // so now what should id o 
     }
 }
